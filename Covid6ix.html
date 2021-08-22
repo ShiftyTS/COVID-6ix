@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home page</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	<style>
+	.navbar6ix{
+		width: 20%;
+		font-size: larger;
+	}
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+	p{
+		padding-top: 10px;
+		font-size:1vw;
+		text-align: center;
+	}	
+    table,
+    th{
+		table-layout: fixed;
+       	padding-top: 10px;
+		padding-bottom: 10px;
+       	border: 1px solid black;
+       	border-collapse: collapse;
+		text-align: center;
+		width: 100%;
+		overflow: hidden;
+		font-size:1.3vw;
+	}
+    td{
+       	padding-top: 10px;
+		padding-bottom: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+		text-align: center;
+		width: 100%;
+		overflow: hidden;
+		font-size:1.2vw;
+	}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+	<div class="navbar">
+		<strong><a href="/" class="navbar6ix">COVID-6IX</a></strong>
+		<a href="/GTA" class="navbarbody">GTA</a>
+		<a href="/durham" class="navbarbody">Durham</a>
+		<a href="/halton" class="navbarbody">Halton</a>
+		<a href="/peel" class="navbarbody">Peel</a>
+		<a href="/toronto" class="navbarbody">Toronto</a>
+		<a href="/york" class="navbarbody">York</a>
+	</div>
+	
+	<main class="table">
+	<br>
+	<strong style="font-size:2vw">Welcome to COVID-6ix!</strong>
+	<hr>
+	<p>
+		Find GTA related COVID-19 stats here, updated daily.<br>
+		All data is taken from covid-19.ontario.ca<br>
+		This project was made by Tao Shen.
+	</p>
+	<img src="/static/logo.JPG" width="747" height="407">
+	</main>
+</body>
+</html>

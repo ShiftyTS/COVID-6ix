@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home page</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	<style>
+	.navbar6ix{
+		width: 20%;
+		font-size: larger;
+	}
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 30px;
+	}
+	p{
+		padding-top: 10px;
+		font-size:1vw;
+	}	
+    table,
+    th{
+		table-layout: fixed;
+       	padding-top: 10px;
+		padding-bottom: 10px;
+       	border: 1px solid black;
+       	border-collapse: collapse;
+		text-align: center;
+		width: 100%;
+		overflow: hidden;
+		font-size:1.3vw;
+	}
+    td{
+       	padding-top: 10px;
+		padding-bottom: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+		text-align: center;
+		width: 100%;
+		overflow: hidden;
+		font-size:1.2vw;
+	}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+	<div class="navbar">
+		<strong><a href="/" class="navbar6ix">COVID-6IX</a></strong>
+		<a href="/GTA" class="navbarbody">GTA</a>
+		<a href="/durham" class="navbarbody">Durham</a>
+		<a href="/halton" class="navbarbody">Halton</a>
+		<a href="/peel" class="navbarbody">Peel</a>
+		<a href="/toronto" class="navbarbody">Toronto</a>
+		<a href="/york" class="navbarbody">York</a>
+	</div>
+	
+	<main class="table">
+	<p> {{ test }} </p>
+	
+	<strong style="font-size:2vw"> Toronto Statistics </strong>
+	<hr>
+	<table>
+		<tr>
+			<th>Change</th>
+			<th>Active</th>
+			<th>Resolved</th>
+			<th>Deaths</th>
+			<th>All</th>
+		</tr>
+		<tr>
+			<td> {{ toronto0 }} </td>
+			<td> {{ toronto1 }} </td>
+			<td> {{ toronto2 }} </td>
+			<td> {{ toronto3 }} </td>
+			<td> {{ toronto4 }} </td>
+		</tr>
+	</table>
+	<p>*Change is the increase or decrease in active cases since the last daily update</p>
+	<img src="/static/toronto.jpg" width="684" height="542">
+	</main>
+</body>
+</html>
