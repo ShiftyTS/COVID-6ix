@@ -8,5 +8,6 @@ COVID-6ix is all about keeping citizens of the Greater Toronto Area informed on 
 This application was built using Selenium, and programmed in Python. In addition, the front end of this project was built using HTML and Flask.
 
 # Images
-![alt text](https://shiftyts.github.io/images/6.png)
 ![alt text](https://cdn.discordapp.com/attachments/903863754486333484/1064883231201165372/image.png)
+![alt text](https://cdn.discordapp.com/attachments/903863754486333484/1064883639663460443/image.png)
+![alt text](https://cdn.discordapp.com/attachments/903863754486333484/1064883708693336104/image.png)
